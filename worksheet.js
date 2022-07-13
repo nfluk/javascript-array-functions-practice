@@ -67,9 +67,38 @@ console.log('First names: ', firstName);
 
 //***SORT***
 //1. Sort by mass
+
+const sortMass = characters.sort((char1, char2) => char2.mass - char1.mass);
+console.log('Sort by mass: ', sortMass);
+
 //2. Sort by height
+
+const sortHeight = characters.sort(
+  (char1, char2) => char2.height - char1.height
+);
+console.log('Sort by height: ', sortHeight);
+
 //3. Sort by name
+
+const sortName = characters.sort((char1, char2) => {
+  if (char1.name < char2.name) {
+    return -1;
+  } else {
+    return 1;
+  }
+});
+console.log('Sort by name: ', sortName);
+
 //4. Sort by gender
+
+const sortGender = characters.sort((char1, char2) => {
+  if (char1.gender < char2.gender) {
+    return -1;
+  } else {
+    return 1;
+  }
+});
+console.log('Sort by gender: ', sortGender);
 
 //***EVERY***
 //1. Does every character have blue eyes?
