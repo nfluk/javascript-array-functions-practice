@@ -61,9 +61,24 @@ console.log('First names: ', firstName);
 
 //***FILTER***
 //1. Get characters with mass greater than 100
+
+const massGreaterThan100 = characters.filter((char) => char.mass > 100);
+console.log('Mass over 100: ', massGreaterThan100);
+
 //2. Get characters with height less than 200
+
+const heightLessThan200 = characters.filter((char) => char.height < 200);
+console.log('Height less than 200: ', heightLessThan200);
+
 //3. Get all male characters
+
+const getAllMale = characters.filter((char) => char.gender === 'male');
+console.log('All the male characters: ', getAllMale);
+
 //4. Get all female characters
+
+const getAllFemale = characters.filter((char) => char.gender === 'female');
+console.log('All the female characters: ', getAllFemale);
 
 //***SORT***
 //1. Sort by mass
